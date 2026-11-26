@@ -1,0 +1,451 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderWave | Explore The World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header class="navbar">
+    <a href="#home" class="logo" data-page="home">🌊 WanderWave</a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav id="navLinks">
+        <a href="#home" data-page="home">Home</a>
+        <a href="#destinations" data-page="destinations">Destinations</a>
+        <a href="#experiences" data-page="experiences">Experiences</a>
+        <a href="#planner" data-page="planner">Trip Planner</a>
+        <a href="#contact" data-page="contact">Contact</a>
+        <a href="#login" data-page="login" class="login-link">Login</a>
+    </nav>
+</header>
+
+<!-- ================= HOME PAGE ================= -->
+
+<section class="page active" id="home">
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="eyebrow">YOUR JOURNEY STARTS HERE</span>
+
+            <h1>Discover the world.<br>
+                <span>Find yourself.</span>
+            </h1>
+
+            <p>
+                From hidden beaches to mountain adventures,
+                explore extraordinary places and make memories
+                that last forever.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="btn primary" data-page="destinations">
+                    Discover Destinations →
+                </button>
+
+                <button class="btn glass" data-page="experiences">
+                    Explore Experiences
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-heading">
+            <span class="eyebrow">EXPLORE THE PLANET</span>
+            <h2>Popular destinations</h2>
+            <p>Places that make you dream of your next adventure.</p>
+        </div>
+
+        <div class="card-grid">
+
+            <article class="travel-card">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Maldives beach">
+                <div class="card-body">
+                    <span class="tag">Island Escape</span>
+                    <h3>Maldives</h3>
+                    <p>Turquoise waters and peaceful island life.</p>
+                    <button class="text-btn" data-page="destinations">Explore →</button>
+                </div>
+            </article>
+
+            <article class="travel-card">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="Mountain scenery">
+                <div class="card-body">
+                    <span class="tag">Mountain Escape</span>
+                    <h3>Switzerland</h3>
+                    <p>Beautiful mountains and breathtaking scenery.</p>
+                    <button class="text-btn" data-page="destinations">Explore →</button>
+                </div>
+            </article>
+
+            <article class="travel-card">
+                <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=900&q=80" alt="London">
+                <div class="card-body">
+                    <span class="tag">City Adventure</span>
+                    <h3>London</h3>
+                    <p>Historic streets and unforgettable attractions.</p>
+                    <button class="text-btn" data-page="destinations">Explore →</button>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="center">
+            <button class="btn primary" data-page="destinations">
+                View All Destinations →
+            </button>
+        </div>
+    </section>
+
+    <section class="feature-banner">
+        <div>
+            <span class="eyebrow">MAKE YOUR DREAM REAL</span>
+            <h2>Your next adventure<br>is waiting for you.</h2>
+            <p>Choose a destination. Create a plan. Start exploring.</p>
+            <button class="btn primary" data-page="planner">Plan My Trip →</button>
+        </div>
+    </section>
+
+</section>
+
+<!-- ================= DESTINATIONS PAGE ================= -->
+
+<section class="page" id="destinations">
+
+    <section class="sub-hero destinations-hero">
+        <span class="eyebrow">WANDER WITHOUT LIMITS</span>
+        <h1>Explore Destinations 🌍</h1>
+        <p>Discover breathtaking places across the world.</p>
+    </section>
+
+    <section class="section">
+
+        <div class="filter-container">
+            <button class="filter active" data-filter="all">All Places</button>
+            <button class="filter" data-filter="beach">Beaches</button>
+            <button class="filter" data-filter="mountain">Mountains</button>
+            <button class="filter" data-filter="city">Cities</button>
+            <button class="filter" data-filter="culture">Culture</button>
+        </div>
+
+        <div class="card-grid destination-grid">
+
+            <article class="travel-card destination-card" data-category="beach">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Maldives">
+                <div class="card-body">
+                    <span class="tag">BEACH</span>
+                    <h3>Maldives</h3>
+                    <p>Crystal-clear water, white sands and island escapes.</p>
+                    <button class="btn small primary" data-plan="Maldives">Plan This Trip →</button>
+                </div>
+            </article>
+
+            <article class="travel-card destination-card" data-category="mountain">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="Switzerland">
+                <div class="card-body">
+                    <span class="tag">MOUNTAIN</span>
+                    <h3>Switzerland</h3>
+                    <p>Snowy peaks, green valleys and alpine adventures.</p>
+                    <button class="btn small primary" data-plan="Switzerland">Plan This Trip →</button>
+                </div>
+            </article>
+
+            <article class="travel-card destination-card" data-category="city">
+                <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=900&q=80" alt="London">
+                <div class="card-body">
+                    <span class="tag">CITY</span>
+                    <h3>London</h3>
+                    <p>Discover famous landmarks and historic attractions.</p>
+                    <button class="btn small primary" data-plan="London">Plan This Trip →</button>
+                </div>
+            </article>
+
+            <article class="travel-card destination-card" data-category="culture">
+                <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=900&q=80" alt="Taj Mahal">
+                <div class="card-body">
+                    <span class="tag">CULTURE</span>
+                    <h3>Agra, India</h3>
+                    <p>Discover the Taj Mahal and India's rich heritage.</p>
+                    <button class="btn small primary" data-plan="Agra">Plan This Trip →</button>
+                </div>
+            </article>
+
+            <article class="travel-card destination-card" data-category="beach">
+                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80" alt="Bali">
+                <div class="card-body">
+                    <span class="tag">BEACH</span>
+                    <h3>Bali</h3>
+                    <p>Tropical beaches, temples and peaceful nature.</p>
+                    <button class="btn small primary" data-plan="Bali">Plan This Trip →</button>
+                </div>
+            </article>
+
+            <article class="travel-card destination-card" data-category="mountain">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80" alt="Ooty">
+                <div class="card-body">
+                    <span class="tag">MOUNTAIN</span>
+                    <h3>Ooty, India</h3>
+                    <p>Misty hills, tea gardens and refreshing nature.</p>
+                    <button class="btn small primary" data-plan="Ooty">Plan This Trip →</button>
+                </div>
+            </article>
+
+            <article class="travel-card destination-card" data-category="city">
+                <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=900&q=80" alt="New York">
+                <div class="card-body">
+                    <span class="tag">CITY</span>
+                    <h3>New York</h3>
+                    <p>Bright city lights and iconic urban attractions.</p>
+                    <button class="btn small primary" data-plan="New York">Plan This Trip →</button>
+                </div>
+            </article>
+
+            <article class="travel-card destination-card" data-category="culture">
+                <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=900&q=80" alt="Jaipur">
+                <div class="card-body">
+                    <span class="tag">CULTURE</span>
+                    <h3>Jaipur, India</h3>
+                    <p>Royal palaces, colourful markets and historic forts.</p>
+                    <button class="btn small primary" data-plan="Jaipur">Plan This Trip →</button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+</section>
+
+<!-- ================= EXPERIENCES PAGE ================= -->
+
+<section class="page" id="experiences">
+
+    <section class="sub-hero experiences-hero">
+        <span class="eyebrow">COLLECT MOMENTS, NOT THINGS</span>
+        <h1>Unique Experiences ✨</h1>
+        <p>Make your journey extraordinary with exciting experiences.</p>
+    </section>
+
+    <section class="section">
+        <div class="card-grid">
+
+            <article class="travel-card">
+                <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=900&q=80" alt="Hiking adventure">
+                <div class="card-body">
+                    <span class="tag">ADVENTURE</span>
+                    <h3>Mountain Adventures</h3>
+                    <p>Discover trails, outdoor activities and scenic landscapes.</p>
+                    <button class="btn small primary" data-page="planner">Explore →</button>
+                </div>
+            </article>
+
+            <article class="travel-card">
+                <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=900&q=80" alt="Beach">
+                <div class="card-body">
+                    <span class="tag">RELAXATION</span>
+                    <h3>Beach Escapes</h3>
+                    <p>Enjoy peaceful coastlines and relaxing ocean views.</p>
+                    <button class="btn small primary" data-page="planner">Explore →</button>
+                </div>
+            </article>
+
+            <article class="travel-card">
+                <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=80" alt="Night sky">
+                <div class="card-body">
+                    <span class="tag">NATURE</span>
+                    <h3>Stargazing</h3>
+                    <p>Enjoy the beauty of night skies and peaceful nature.</p>
+                    <button class="btn small primary" data-page="planner">Explore →</button>
+                </div>
+            </article>
+
+            <article class="travel-card">
+                <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80" alt="Italian village">
+                <div class="card-body">
+                    <span class="tag">CULTURE</span>
+                    <h3>Local Discoveries</h3>
+                    <p>Explore traditional places, local art and culture.</p>
+                    <button class="btn small primary" data-page="planner">Explore →</button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+</section>
+
+<!-- ================= TRIP PLANNER PAGE ================= -->
+
+<section class="page" id="planner">
+
+    <section class="sub-hero planner-hero">
+        <span class="eyebrow">LET THE ADVENTURE BEGIN</span>
+        <h1>Plan Your Dream Trip 🗺️</h1>
+        <p>Create your own travel plan in just a few steps.</p>
+    </section>
+
+    <section class="section planner-section">
+
+        <div class="planner-box">
+
+            <h2>Trip Details</h2>
+            <p>Tell us what your dream trip looks like.</p>
+
+            <form id="plannerForm">
+
+                <label for="tripDestination">Destination</label>
+                <input type="text" id="tripDestination" placeholder="Where do you want to go?" required>
+
+                <label for="tripDate">Travel Date</label>
+                <input type="date" id="tripDate" required>
+
+                <label for="tripPeople">Number of travellers</label>
+                <select id="tripPeople" required>
+                    <option value="">Select travellers</option>
+                    <option>1 Person</option>
+                    <option>2 People</option>
+                    <option>3 People</option>
+                    <option>4 People</option>
+                    <option>5+ People</option>
+                </select>
+
+                <label for="tripDuration">Duration</label>
+                <select id="tripDuration" required>
+                    <option value="">Select duration</option>
+                    <option>Weekend trip</option>
+                    <option>3 - 5 Days</option>
+                    <option>1 Week</option>
+                    <option>2 Weeks</option>
+                    <option>More than 2 weeks</option>
+                </select>
+
+                <label for="tripStyle">Travel Style</label>
+                <select id="tripStyle" required>
+                    <option value="">Choose your travel style</option>
+                    <option>Adventure</option>
+                    <option>Relaxation</option>
+                    <option>Nature</option>
+                    <option>Culture</option>
+                    <option>City Exploration</option>
+                </select>
+
+                <button type="submit" class="btn primary full">
+                    Create My Trip ✈️
+                </button>
+
+            </form>
+
+            <div id="tripResult" class="result"></div>
+
+        </div>
+
+    </section>
+
+</section>
+
+<!-- ================= CONTACT PAGE ================= -->
+
+<section class="page" id="contact">
+
+    <section class="sub-hero contact-hero">
+        <span class="eyebrow">WE ARE HERE TO HELP</span>
+        <h1>Contact WanderWave 📩</h1>
+        <p>Have a question? Send us a message.</p>
+    </section>
+
+    <section class="section">
+
+        <div class="contact-box">
+
+            <h2>Send us a message</h2>
+
+            <form id="contactForm">
+
+                <label for="contactName">Your Name</label>
+                <input type="text" id="contactName" placeholder="Enter your name" required>
+
+                <label for="contactEmail">Email</label>
+                <input type="email" id="contactEmail" placeholder="Enter your email" required>
+
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" rows="5" placeholder="Write your message..." required></textarea>
+
+                <button class="btn primary full" type="submit">Send Message →</button>
+
+            </form>
+
+            <div id="contactResult" class="result"></div>
+
+        </div>
+
+    </section>
+
+</section>
+
+<!-- ================= LOGIN PAGE ================= -->
+
+<section class="page" id="login">
+
+    <section class="sub-hero login-hero">
+        <span class="eyebrow">WELCOME TO WANDERWAVE</span>
+        <h1>Your Travel Journey Begins Here ✨</h1>
+        <p>Sign in to explore your travel inspiration.</p>
+    </section>
+
+    <section class="section">
+
+        <div class="login-box">
+
+            <h2>Welcome Traveller!</h2>
+            <p>Enter your details below.</p>
+
+            <form id="loginForm">
+
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" placeholder="Your email address" required>
+
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" placeholder="Your password" required>
+
+                <button class="btn primary full" type="submit">Login</button>
+
+            </form>
+
+            <div id="loginResult" class="result"></div>
+
+            <p class="login-note">
+                Demo login only — this website does not store account information.
+            </p>
+
+        </div>
+
+    </section>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+    <h2>🌊 WanderWave</h2>
+    <p>Explore • Dream • Discover</p>
+
+    <div class="footer-links">
+        <button data-page="home">Home</button>
+        <button data-page="destinations">Destinations</button>
+        <button data-page="experiences">Experiences</button>
+        <button data-page="planner">Trip Planner</button>
+        <button data-page="contact">Contact</button>
+    </div>
+
+    <p class="copyright">© 2026 WanderWave. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
